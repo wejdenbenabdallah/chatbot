@@ -1,5 +1,8 @@
 from tkinter import *
 from chat import get_response, bot_name
+from chat import get_response, bot_name
+from flask import Flask
+app = Flask(__name__)
 
 BG_GRAY = "#ABB2B9"
 BG_COLOR = "#17202A"
@@ -81,4 +84,5 @@ class ChatApplication:
         
 if __name__ == "__main__":
     app = ChatApplication()
+
     app.run()
